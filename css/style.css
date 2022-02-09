@@ -6,10 +6,10 @@
 
 /*Neutral*/
 --Very-dark-cyan: hsl(183, 100%, 15%);
---Dark-grayish-cyan: hsl(186, 14%, 43%);
---Dark-grayish-cyan: hsl(184, 14%, 56%);
---Light-grayish-cyan: hsl(185, 41%, 84%);
---Light-grayish-cyan: hsl(189, 41%, 97%);
+--Dark-grayish-cyan1: hsl(186, 14%, 43%);
+--Dark-grayish-cyan2: hsl(184, 14%, 56%);
+--Light-grayish-cyan1: hsl(185, 41%, 84%);
+--Light-grayish-cyan2: hsl(189, 41%, 97%);
 --White: hsl(0, 0%, 100%);
 }
 
@@ -25,4 +25,5 @@ html{
 body{
        font-family: 'Space Mono', monospace;
        font-size: 2.4rem;
+       background-color: var(--Light-grayish-cyan1);
 }
