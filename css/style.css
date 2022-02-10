@@ -27,3 +27,16 @@ body{
        font-size: 2.4rem;
        background-color: var(--Light-grayish-cyan1);
 }
+
+/*ocultar titulo para ser lido somente pelos */
+.text-hide { 
+       border: 0;
+       padding: 0;
+       margin: 0;
+       position: absolute !important;
+       height: 1px; 
+       width: 1px;
+       overflow: hidden;
+       clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
+       white-space: nowrap; /* linha adicionada para evitar que as palavras fiquem juntas (à medida que vão para linhas separadas e alguns leitores de ecrã não entendem os feeds de linha como um espaço */
+   }
