@@ -16,28 +16,37 @@
 <body>
     <header>
         <h2 class="text-hide">Tip Splitter App</h2>
-        <img src="./images/logo.svg" alt="Logo">
+        <a href="index.html">
+            <img src="./images/logo.svg" alt="Tip Splitter Logo">
+        </a>        
     </header>
     <main>
-        <section class="box-one">
-
+        <section id="calc">
+            <section id="calc-inputs">
+                <div class="total-amount">
+                    <label for="bill-amount">Bill</label>
+                    <input id="bill-amount" type="number" step="any" placeholder="0">                    
+                </div>
+                <div class="tip-selection">
+                    <legend>Select Tip %</legend>
+                    <button>5%</button>
+                    <button>10%</button>
+                    <button>15%</button>
+                    <button>25%</button>
+                    <button>50%</button>                
+                    <input id="tip-custom" type="number" step="any" placeholder="Custom">
+                </div>
+                <div class="people">
+                    <label for="num-people">Number of People</label>
+                    <input id="num-people" type="number" step="1" placeholder="0">                
+                </div>
+            </section>
         </section>
-        <section class="box-two">
+        <section id="result">
 
         </section>
     </main>
-
-    Bill
-
-    Select Tip %
-    5%
-    10%
-    15%
-    25%
-    50%
-    Custom
-
-    Number of People
+   
 
     Tip Amount
     / person
