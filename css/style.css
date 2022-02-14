@@ -81,6 +81,17 @@ input#bill-amount{
        font-weight: 700;
        border: none;
        margin-bottom: 4rem;
-       
-
+}
+.tip-selection .button {
+       display: grid;
+       grid-template-columns: repeat(2, auto);  
+       gap: 1rem; 
+           
+}
+.tip-selection .button button{      
+       background-color: var(--Very-dark-cyan);
+       color: var(--White);
+       font-size: 2.5rem;
+       border: none;
+       border-radius: 0.5rem;
 }
