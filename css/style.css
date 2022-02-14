@@ -62,13 +62,25 @@ section#result{
        border-radius: 1.5rem;
        padding: 2rem;
 }
-label{
+label,
+legend{
        display: block;
-       font-size: 1.6rem;
+       font-size: 1.7rem;
        font-weight: 700;
        color: var(--Dark-grayish-cyan1);
 }
 input#bill-amount{
        width: 100%;
        height: 3rem;
+       padding: 2rem;
+       background: var(--Light-grayish-cyan2) url(../images/icon-dollar.svg) no-repeat center left 2rem;
+       text-align: right;
+       font-family: 'Space Mono', monospace;
+       color: var(--Very-dark-cyan);
+       font-size: 2.5rem;
+       font-weight: 700;
+       border: none;
+       margin-bottom: 4rem;
+       
+
 }
