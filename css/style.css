@@ -54,8 +54,8 @@ main{
        width: 100%;
        height: 100vh;
        background-color: var(--White);
-       border-radius: 2rem 2rem 0 0;
-       padding: 2rem;
+       border-radius: 3rem 3rem 0 0;
+       padding: 3rem;
 }
 section#result{
        background-color: var(--Very-dark-cyan);
@@ -67,10 +67,13 @@ legend{
        display: block;
        font-size: 1.7rem;
        font-weight: 700;
-       color: var(--Dark-grayish-cyan1);
+       color: var(--Dark-grayish-cyan1);       
 }
 legend{
        margin-bottom: 2rem;
+}
+label{
+       margin-bottom: 1rem;
 }
 input#bill-amount{
        width: 100%;
@@ -86,9 +89,11 @@ input#bill-amount{
 }
 .tip-selection .button {
        display: grid;
-       grid-template-columns: repeat(2, 1fr);  
-       grid-template-rows: 5rem 5rem 5rem;
+       grid-template-columns: repeat(2, minmax(15rem, 1fr));  
+       grid-auto-rows: 5rem;
        gap: 2rem; 
+       justify-content: center;
+       
            
 }
 .tip-selection .button button{      
