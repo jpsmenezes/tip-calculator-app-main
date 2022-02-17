@@ -119,3 +119,41 @@ input#bill-amount{
        color: var(--Very-dark-cyan);
        text-align: center;
 }
+input#num-people{
+       width: 100%;
+       height: 5rem;
+       padding: 2rem;
+       background: var(--Light-grayish-cyan2) url(../images/icon-person.svg) no-repeat center left 2rem;
+       text-align: right;      
+       color: var(--Very-dark-cyan);
+       font-size: 2.5rem;
+       font-weight: 700;
+       border: none;
+       border-radius: 0.5rem;
+       margin-bottom: 4rem;
+}
+section#result{
+       padding: 5rem 2.5rem;       
+}
+section#result p{
+       font-size: 1.6rem;
+       font-weight: 600;
+       color: var(--Light-grayish-cyan2);
+}
+section#result p > span{
+       color: var(--Dark-grayish-cyan2);
+       display: block;
+}
+section#result .amount{
+       display: flex;
+       justify-content: space-between;
+}
+section#result .amount > span{
+       color: var(--Strong-cyan);
+       font-size: 3.2rem;
+       font-weight: 600;
+}
+section#result .total{
+       display: flex;
+       justify-content: space-between;
+}
