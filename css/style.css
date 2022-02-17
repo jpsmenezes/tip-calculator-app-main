@@ -140,11 +140,11 @@ section#result p{
        font-weight: 600;
        color: var(--Light-grayish-cyan2);
 }
-section#result p > span{
+section#result .small-text{
        color: var(--Dark-grayish-cyan2);
        display: block;
 }
-section#result .amount{
+section#result > div{
        display: flex;
        justify-content: space-between;
 }
@@ -154,6 +154,5 @@ section#result .amount > span{
        font-weight: 600;
 }
 section#result .total{
-       display: flex;
-       justify-content: space-between;
+       margin-top: 3rem;
 }
