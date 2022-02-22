@@ -133,7 +133,7 @@ input#num-people{
        margin-bottom: 4rem;
 }
 section#result{
-       padding: 5rem 2.5rem;       
+       padding: 5rem 2.5rem 2rem;       
 }
 section#result p{
        font-size: 1.6rem;
@@ -143,6 +143,7 @@ section#result p{
 section#result .small-text{
        color: var(--Dark-grayish-cyan2);
        display: block;
+       font-size: 1.4rem;
 }
 section#result > div{
        display: flex;
@@ -153,6 +154,23 @@ section#result .amount > span{
        font-size: 3.2rem;
        font-weight: 600;
 }
+section#result .total > span{      
+       color: var(--Strong-cyan);
+       font-size: 3.2rem;
+       font-weight: 600;
+}
 section#result .total{
        margin-top: 3rem;
+}
+section#result button{
+       width: 100%;
+       height: 5rem;
+       margin-top: 3rem;
+       background-color: var(--Strong-cyan);
+       border: none;
+       border-radius: 0.6rem;
+       font-size: 2rem;
+       font-weight: 700;
+       color: var(--Very-dark-cyan);
+       
 }
