@@ -48,12 +48,44 @@ function getTipPct() {
        tipResult.innerHTML = "$" + tipPP.toFixed(2);
        totalResult.innerHTML = "$" + totalPP.toFixed(2); 
    }
+   function updateCustomTip(e) {
+       //se o valor de entrada estiver vazio ou 0 pule e recalcule
+       if(!isNaN(e.target.value) && !isNaN(parseFloat(e.target.value))) {
+           // desmarque os botões ao usar o valor de gorjeta personalizado
+           tipButtons.forEach(button => button.classList.remove("selected"));
+           customTipAmount = parseFloat(e.target.value);
+   
+           e.target.value = parseFloat(e.target.value).toFixed(2);
+       } else {
+           customTipAmount = 0.00;
+       }
+       calcResults();
+   }
 
-
-
-
-
-
+   function resetForm() {
+       billTotal = 0.00;
+       customTipAmount = 0.00;
+       tipPercent = 0;
+       people = 0;
+       tipPP = 0.00;
+       totalPP = 0.00;    
+   
+       billAmount.value = "";
+       numPeople.value = "";
+       tipCustom.value = "";
+       tipButtons.forEach(button => button.classList.remove("selected"));
+       calcResults();
+   }
+   billAmount.addEventListener('change', (e) => {
+       billTotal = parseFloat(e.target.value);
+       e.target.value = parseFloat(e.target.value).toFixed(2);    
+       calcResults();
+   });
+   
+   numPeople.addEventListener('change', (e) => {
+       people = parseInt(e.target.value);
+       calcResults();
+   });
 
 tipCustom.addEventListener('change',(e) => updateCustomTip(e));
 tipButtons.forEach(button => button.addEventListener('click',getTipPct));
