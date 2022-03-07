@@ -110,6 +110,10 @@ input#bill-amount{
        border: none;
        border-radius: 0.5rem;
 }
+.tip-selection button.selected {
+       background-color: var(--Strong-cyan);
+       color: var(--Very-dark-cyan);
+   }
 .tip-selection .button input{
        background-color: var(--Light-grayish-cyan2);
        border: none;

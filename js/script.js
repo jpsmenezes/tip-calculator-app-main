@@ -1,5 +1,5 @@
 const billAmount = document.querySelector('#bill-amount');
-const buttons = document.querySelectorAll('.button>button');
+const tipButtons = document.querySelectorAll('.button>button');
 const tipCustom = document.querySelector('#tip-custom');
 const numPeople = document.querySelector('#num-people');
 const tipResult = document.querySelector('.tip-pp');
@@ -13,6 +13,23 @@ let people = 0;
 let tipPP = 0.00;
 let totalPP = 0.00;
 
+function getTipPct() {
+       if(this.classList.contains("selected")) {
+           // o usuário está desmarcando, remova selecionado e defina tipPercent como 0
+           this.classList.remove("selected");
+           tipPercent = 0;
+       } else {
+           // O usuário está selecionando: 
+           // desmarque outros botões e personalizados, adicione selecionado e defina tipPercent para value
+           tipButtons.forEach(button => button.classList.remove("selected"));
+           customTipAmount = 0.00;
+           tipCustom.value = "";
+           this.classList.add("selected");
+           tipPercent = parseInt(this.innerText.substring(0,2));
+       }
+       calcResults();
+   }
+
 
 
 
@@ -20,5 +37,5 @@ let totalPP = 0.00;
 
 
 tipCustom.addEventListener('change',(e) => updateCustomTip(e));
-buttons.forEach(button => button.addEventListener('click',getTipPct));
+tipButtons.forEach(button => button.addEventListener('click',getTipPct));
 resetButton.addEventListener('click',resetForm);
