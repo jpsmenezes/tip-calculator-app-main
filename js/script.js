@@ -29,6 +29,25 @@ function getTipPct() {
        }
        calcResults();
    }
+   function calcResults() {
+       if(people===0) {
+           tipPP = 0.00;
+           totalPP = 0.00;
+           updateResults();
+       } else {
+           if(customTipAmount > 0) {
+               tipPP = customTipAmount/people;
+           } else {
+               tipPP = ((billTotal*(tipPercent/100))/people);
+           }
+           totalPP = (billTotal/people)+tipPP;
+           updateResults();
+       }
+   }
+   function updateResults() {
+       tipResult.innerHTML = "$" + tipPP.toFixed(2);
+       totalResult.innerHTML = "$" + totalPP.toFixed(2); 
+   }
 
 
 
