@@ -27,7 +27,7 @@
                 <section id="calc-inputs">
                     <div class="total-amount">
                         <label for="bill-amount">Bill</label>
-                        <input id="bill-amount" type="number" step="any" placeholder="0">                    
+                        <input id="bill-amount" type="number" min="0.00" step="any" placeholder="0">                    
                     </div>
                     <div class="tip-selection">
                         <legend>Select Tip %</legend>
@@ -37,12 +37,12 @@
                             <button>15%</button>
                             <button>25%</button>
                             <button>50%</button>                
-                            <input id="tip-custom" type="number" step="any" placeholder="Custom">
+                            <input id="tip-custom" type="number" min="0.00" step="any" placeholder="Custom" >
                         </div>                    
                     </div>
                     <div class="people">
                         <label for="num-people">Number of People</label>
-                        <input id="num-people" type="number" step="1" placeholder="0">                
+                        <input id="num-people" type="number" min="0"  step="1" placeholder="0">                
                     </div>
                 </section>
             </section>
