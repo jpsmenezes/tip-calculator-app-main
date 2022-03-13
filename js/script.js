@@ -83,7 +83,7 @@ function getTipPct() {
    });
    
    numPeople.addEventListener('change', (e) => {
-       people = parseInt(e.target.value);
+       people = parseInt(e.target.value);       
        calcResults();
    });
 
